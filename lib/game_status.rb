@@ -14,6 +14,7 @@ WIN_COMBINATIONS = [
   [1,4,7] #Vertical Row 2 
   [2,5,8] #Vertical Row 3
   ]
+end
   
   def won?(board)
     WIN_COMBINATIONS.detect{|combo| board[combo[0]] == board[combo[1]] && 
