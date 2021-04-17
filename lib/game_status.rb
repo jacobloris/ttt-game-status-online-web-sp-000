@@ -16,4 +16,8 @@ WIN_COMBINATIONS = [
   ]
   
   def won?(board)
-    WIN_COMBINATIONS
+    if board.all? == " " || board.all? == nil 
+      return nil 
+    else 
+      WIN_COMBINATIONS.detect do |win|
+        
